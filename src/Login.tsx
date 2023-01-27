@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { auth } from './firebase';
+import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
 
 function Login() {
 	const style = {
@@ -18,6 +20,14 @@ function Login() {
 
 	const signIn = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
 		e.preventDefault();
+	};
+	const register = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+		e.preventDefault();
+		createUserWithEmailAndPassword(auth, email, password)
+			.then((auth) => {
+				console.log(auth);
+			})
+			.catch((error) => alert(error.message));
 	};
 
 	return (
@@ -70,7 +80,9 @@ function Login() {
 					</a>
 				</p>
 
-				<button className={style.registerBtn}>
+				<button
+					onClick={register}
+					className={style.registerBtn}>
 					Create your Amazon account
 				</button>
 			</div>

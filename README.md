@@ -32,3 +32,9 @@ npm i @mui/icons-material @mui/material @emotion/styled @emotion/react react-rou
 ```bash
 npm i react-currency-format --force
 ```
+
+https://firebase.google.com/docs/web/modular-upgrade#update_imports_to_v9_compat
+
+```bash
+npm i firebase@4.8.0
+```
