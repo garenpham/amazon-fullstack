@@ -46,25 +46,18 @@ function Header() {
 			</div>
 
 			<div className={style.nav}>
-				{user ? (
-					<Link to="/">
-						<div
-							onClick={handleAuthentication}
-							className={style.option}>
-							<span className={style.optionLineOne}>Hello User</span>
-							<span className={style.optionLineTwo}>Sign out</span>
-						</div>
-					</Link>
-				) : (
-					<Link to="/login">
-						<div
-							onClick={handleAuthentication}
-							className={style.option}>
-							<span className={style.optionLineOne}>Hello Guest</span>
-							<span className={style.optionLineTwo}>Sign in</span>
-						</div>
-					</Link>
-				)}
+				<Link to="/login">
+					<div
+						onClick={handleAuthentication}
+						className={style.option}>
+						<span className={style.optionLineOne}>
+							Hello {user ? `${user.email.match(/^.+(?=@)/)[0]}` : 'Guest'}
+						</span>
+						<span className={style.optionLineTwo}>
+							Sign {user ? 'out' : 'in'}
+						</span>
+					</div>
+				</Link>
 
 				<div className={style.option}>
 					<span className={style.optionLineOne}>Returns</span>

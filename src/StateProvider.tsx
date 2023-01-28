@@ -4,7 +4,6 @@ import {
 	useContext,
 	useReducer,
 } from 'react';
-import { IItem } from './Product';
 import { IReducer, IState } from './reducer';
 
 /**
