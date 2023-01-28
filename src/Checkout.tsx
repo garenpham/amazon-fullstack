@@ -12,7 +12,7 @@ const style = {
 };
 
 function Checkout() {
-	const [{ basket }, dispatch] = useStateValue();
+	const [{ basket, user }, dispatch] = useStateValue();
 
 	return (
 		<div className={style.wrapper}>
@@ -24,7 +24,7 @@ function Checkout() {
 				/>
 
 				<div>
-					<h2 className={style.title}>Your shopping Basket</h2>
+					<h2 className={style.title}>Shopping Cart</h2>
 					{basket.map(({ id, title, image, price, rating }: IItem) => (
 						<CheckoutProduct
 							id={id}

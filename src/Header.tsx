@@ -1,6 +1,7 @@
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import { Link } from 'react-router-dom';
+import { auth } from './firebase';
 import { useStateValue } from './StateProvider';
 
 const style = {
@@ -18,7 +19,13 @@ const style = {
 };
 
 function Header() {
-	const [{ basket }, dispatch] = useStateValue();
+	const [{ basket, user }, dispatch] = useStateValue();
+
+	const handleAuthentication = () => {
+		if (user) {
+			auth.signOut();
+		}
+	};
 
 	return (
 		<div className={style.wrapper}>
@@ -39,12 +46,26 @@ function Header() {
 			</div>
 
 			<div className={style.nav}>
-				<Link to="/login">
-					<div className={style.option}>
-						<span className={style.optionLineOne}>Hello Guest</span>
-						<span className={style.optionLineTwo}>Sign in</span>
-					</div>
-				</Link>
+				{!user ? (
+					<Link to="/login">
+						<div
+							onClick={handleAuthentication}
+							className={style.option}>
+							<span className={style.optionLineOne}>Hello Guest</span>
+							<span className={style.optionLineTwo}>Sign in</span>
+						</div>
+					</Link>
+				) : (
+					<Link to="/">
+						<div
+							onClick={handleAuthentication}
+							className={style.option}>
+							<span className={style.optionLineOne}>Hello User</span>
+							<span className={style.optionLineTwo}>Sign out</span>
+						</div>
+					</Link>
+				)}
+
 				<div className={style.option}>
 					<span className={style.optionLineOne}>Returns</span>
 					<span className={style.optionLineTwo}>& Orders</span>

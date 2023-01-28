@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { auth } from './firebase';
-import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
+import {
+	getAuth,
+	createUserWithEmailAndPassword,
+	signInWithEmailAndPassword,
+} from 'firebase/auth';
 
 function Login() {
 	const style = {
@@ -11,21 +15,27 @@ function Login() {
 		container__signIn: `font-[500] mb-[20px] text-3xl`,
 		container__input: `h-[30px] w-[98%] mb-[10px] p-3 bg-white border-[1px] rounded-[5px] border-solid border-gray-400 focus:outline-none focus:bg-yellow-100`,
 		policy: `mt-[15px] text-[12px]`,
-		signInBtn: `bg-[#f0c14b] rounded-[10px] w-full h-[30px] border-[1px] border-solid mt-[10px] border-t-[#a88734] border-x-[#9c7e31] border-b-[#846a29]`,
-		registerBtn: `rounded-[2px] w-full h-[30px] border-[1px] border-solid mt-[10px] border-gray-400 bg-gray-100`,
+		signInBtn: `bg-[#f0c14b] hover:bg-yellow-400 rounded-[10px] w-full h-[30px] border-[1px] border-solid mt-[10px] border-t-[#a88734] border-x-[#9c7e31] border-b-[#846a29]`,
+		registerBtn: `rounded-[2px] w-full h-[30px] border-[1px] border-solid mt-[10px] border-gray-400 bg-gray-100 hover:bg-gray-200`,
 	};
 
+	const navigate = useNavigate();
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
 
 	const signIn = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
 		e.preventDefault();
+		signInWithEmailAndPassword(auth, email, password)
+			.then((auth) => navigate('/'))
+			.catch((error) => alert(error.message));
 	};
 	const register = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
 		e.preventDefault();
 		createUserWithEmailAndPassword(auth, email, password)
 			.then((auth) => {
-				console.log(auth);
+				if (auth) {
+					navigate('/');
+				}
 			})
 			.catch((error) => alert(error.message));
 	};

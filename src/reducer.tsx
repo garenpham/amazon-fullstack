@@ -2,6 +2,7 @@ import { IItem } from './Product';
 
 export const initialState = {
 	basket: [],
+	user: null,
 };
 
 /**
@@ -16,6 +17,7 @@ export interface IAction {
 	type: string;
 	id: string;
 	item: IItem;
+	user: {};
 }
 
 export interface IReducer {
@@ -46,6 +48,9 @@ const reducer = (state: IState, action: IAction) => {
 			}
 
 			return { ...state, basket: newBasket };
+
+		case 'SET_USER':
+			return { ...state, user: action.user };
 
 		default:
 			return state;
