@@ -17,6 +17,9 @@ node_modules
 .env.local
 .env.development.local
 .env.test.local
+.firebaserc
+firebase.json
+.firebase
 /src/styles/
 .env.production.local
 

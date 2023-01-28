@@ -38,3 +38,5 @@ https://firebase.google.com/docs/web/modular-upgrade#update_imports_to_v9_compat
 ```bash
 npm i firebase@4.8.0
 ```
+
+https://github.com/joshwcomeau/react-flip-move
