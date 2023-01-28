@@ -46,22 +46,22 @@ function Header() {
 			</div>
 
 			<div className={style.nav}>
-				{!user ? (
-					<Link to="/login">
-						<div
-							onClick={handleAuthentication}
-							className={style.option}>
-							<span className={style.optionLineOne}>Hello Guest</span>
-							<span className={style.optionLineTwo}>Sign in</span>
-						</div>
-					</Link>
-				) : (
+				{user ? (
 					<Link to="/">
 						<div
 							onClick={handleAuthentication}
 							className={style.option}>
 							<span className={style.optionLineOne}>Hello User</span>
 							<span className={style.optionLineTwo}>Sign out</span>
+						</div>
+					</Link>
+				) : (
+					<Link to="/login">
+						<div
+							onClick={handleAuthentication}
+							className={style.option}>
+							<span className={style.optionLineOne}>Hello Guest</span>
+							<span className={style.optionLineTwo}>Sign in</span>
 						</div>
 					</Link>
 				)}
