@@ -11,10 +11,10 @@ const style = {
 	searchInput: `h-[12px] w-full border-none p-[10px]`,
 	searchIcon: `p-[4px] !h-[20.22px] bg-[#cd9042]`,
 	nav: `flex justify-evenly`,
-	option: `flex flex-col mx-[10px] text-white`,
-	optionLineOne: `text-[10px]`,
+	option: `flex flex-col text-white py-2 px-3 border-[1px] border-transparent hover:border-white hover:rounded-[2px] hover:py-2 hover:px-3"`,
+	optionLineOne: `text-[10px] capitalize text-gray-300`,
 	optionLineTwo: `text-[13px] font-[800]`,
-	basket: `flex items-center text-white`,
+	basket: `flex items-center text-white mt-4 ml-2`,
 	basketCount: `mx-[10px]`,
 };
 
@@ -49,9 +49,9 @@ function Header() {
 				<Link to="/login">
 					<div
 						onClick={handleAuthentication}
-						className={style.option}>
+						className={[style.option, 'ml-3'].join(' ')}>
 						<span className={style.optionLineOne}>
-							Hello {user ? `${user.email.match(/^.+(?=@)/)[0]}` : 'Guest'}
+							Hello {user ? `${user.email.match(/^.+(?=@)/)}` : 'Guest'}
 						</span>
 						<span className={style.optionLineTwo}>
 							Sign {user ? 'out' : 'in'}
