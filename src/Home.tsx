@@ -3,7 +3,7 @@ import Product from './Product';
 const style = {
 	wrapper: `flex justify-center mx-auto w-full`,
 	container: ``,
-	banner: `w-full z-[-1] mb-[-280px] gradient-mask-b-20`,
+	banner: `w-full z-[-1] xl:mb-[-280px] 2xl:mb-[-340px] gradient-mask-b-20`,
 	row: `flex z-[1] mx-[5px]`,
 };
 

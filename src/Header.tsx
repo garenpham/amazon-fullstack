@@ -5,16 +5,16 @@ import { auth } from './firebase';
 import { useStateValue } from './StateProvider';
 
 const style = {
-	wrapper: `sticky top-0 h-[60px] flex items-center bg-[#131921] z-[100]`,
-	logo: `w-[100px] object-contain mt-[18px] mb-0 mx-[20px]`,
+	wrapper: `sticky top-0 h-[60px] 2xl:h-[74px] flex items-center bg-[#131921] z-[100]`,
+	logo: `w-[100px] object-contain mt-[18px] mb-0 mx-[20px] active:scale-95 transform transition duration-100 ease-in`,
 	search: `flex flex-1 items-center rounded-[24px]`,
 	searchInput: `h-[12px] w-full border-none p-[10px]`,
 	searchIcon: `p-[4px] !h-[20.22px] bg-[#cd9042]`,
 	nav: `flex justify-evenly`,
 	option: `flex flex-col text-white py-2 px-3 border-[1px] border-transparent hover:border-white hover:rounded-[2px] hover:py-2 hover:px-3"`,
-	optionLineOne: `text-[10px] capitalize text-gray-300`,
-	optionLineTwo: `text-[13px] font-[800]`,
-	basket: `flex items-center text-white mt-4 ml-2`,
+	optionLineOne: `xl:text-[10px] 2xl:text-[14px] capitalize text-gray-300`,
+	optionLineTwo: `xl:text-[12px] 2xl:text-[18px] font-[700]`,
+	basket: `flex items-center text-white mt-4 ml-2 active:scale-95 transform transition duration-100 ease-in`,
 	basketCount: `mx-[10px]`,
 };
 
