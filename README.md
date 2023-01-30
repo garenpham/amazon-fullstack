@@ -8,11 +8,11 @@ Payment, and Orders History page using FireBase.
 Initialize app with tailwind
 
 ```bash
-npx create-react-app amazon-clone
+npx create-react-app amazon-clone-ts --template typescript
 ```
 
 ```bash
-cd amazon-clone
+cd amazon-clone-ts
 ```
 
 ```bash
@@ -33,10 +33,24 @@ npm i @mui/icons-material @mui/material @emotion/styled @emotion/react react-rou
 npm i react-currency-format --force
 ```
 
+```bash
+npm i @types/react-currency-format
+```
+
 https://firebase.google.com/docs/web/modular-upgrade#update_imports_to_v9_compat
 
 ```bash
-npm i firebase@4.8.0
+npm i firebase@latest
 ```
 
 https://github.com/joshwcomeau/react-flip-move
+
+https://github.com/stripe/stripe-node
+
+```bash
+npm i @stripe/stripe-js
+```
+
+```bash
+npm i @stripe/react-stripe-js
+```
