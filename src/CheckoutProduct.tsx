@@ -15,7 +15,7 @@ const CheckoutProduct = ({ id, image, title, price, rating }: IItem) => {
 	};
 
 	const style = {
-		wrapper: `flex my-[20px] hover:shadow active:scale-95 transform transition duration-200 ease-in`,
+		wrapper: `flex py-[20px] hover:shadow active:scale-95 transform transition duration-200 ease-in`,
 		image: `object-contain w-[180px] h-[180px]`, // object-left
 		info: `pl-[20px]`,
 		title: `text-[17px] font-[800]`,
