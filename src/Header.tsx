@@ -46,7 +46,7 @@ function Header() {
 			</div>
 
 			<div className={style.nav}>
-				<Link to="/login">
+				<Link to={!user ? '/login' : ''}>
 					<div
 						onClick={handleAuthentication}
 						className={[style.option, 'ml-3'].join(' ')}>
@@ -58,11 +58,12 @@ function Header() {
 						</span>
 					</div>
 				</Link>
-
-				<div className={style.option}>
-					<span className={style.optionLineOne}>Returns</span>
-					<span className={style.optionLineTwo}>& Orders</span>
-				</div>
+				<Link to="/orders">
+					<div className={style.option}>
+						<span className={style.optionLineOne}>Returns</span>
+						<span className={style.optionLineTwo}>& Orders</span>
+					</div>
+				</Link>
 				<div className={style.option}>
 					<span className={style.optionLineOne}>Your</span>
 					<span className={style.optionLineTwo}>Prime</span>

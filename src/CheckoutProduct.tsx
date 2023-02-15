@@ -1,7 +1,14 @@
 import { IItem } from './Product';
 import { useStateValue } from './StateProvider';
 
-const CheckoutProduct = ({ id, image, title, price, rating }: IItem) => {
+const CheckoutProduct = ({
+	id,
+	image,
+	title,
+	price,
+	rating,
+	hideButton,
+}: IItem) => {
 	const [{ basket }, dispatch] = useStateValue();
 
 	const removeFromBasket = () => {
@@ -18,7 +25,7 @@ const CheckoutProduct = ({ id, image, title, price, rating }: IItem) => {
 		wrapper: `flex py-[20px] hover:shadow active:scale-95 transform transition duration-200 ease-in`,
 		image: `object-contain w-[180px] h-[180px]`, // object-left
 		info: `pl-[20px]`,
-		title: `text-[17px] font-[800]`,
+		title: `text-[17px] font-[700]`,
 		price: ``,
 		rating: `flex`,
 		btn: `bg-[#f0c14b] mt-[10px] border-[1px] border-solid border-t-[#a88734] border-x-[#9c7e31] border-b-[#846a29] text-[#111] px-[8px] hover:scale-105 hover:bg-[#f4cf71] transform transition duration-200 ease-in`,
@@ -43,11 +50,13 @@ const CheckoutProduct = ({ id, image, title, price, rating }: IItem) => {
 							<p key={i}>⭐</p>
 						))}
 				</div>
-				<button
-					onClick={removeFromBasket}
-					className={style.btn}>
-					Remove from Basket
-				</button>
+				{!hideButton && (
+					<button
+						onClick={removeFromBasket}
+						className={style.btn}>
+						Remove from Basket
+					</button>
+				)}
 			</div>
 		</div>
 	);

@@ -15,6 +15,7 @@ export interface IItem {
 	image: string;
 	price: number;
 	rating: number;
+	hideButton?: boolean;
 }
 
 function Product({ id, title, image, price, rating }: IItem) {

@@ -1,0 +1,86 @@
+[debug] [2023-02-15T08:26:19.451Z] ----------------------------------------------------------------------
+[debug] [2023-02-15T08:26:19.454Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2023-02-15T08:26:19.455Z] CLI Version:   11.23.1
+[debug] [2023-02-15T08:26:19.455Z] Platform:      win32
+[debug] [2023-02-15T08:26:19.455Z] Node Version:  v18.13.0
+[debug] [2023-02-15T08:26:19.457Z] Time:          Wed Feb 15 2023 00:26:19 GMT-0800 (Pacific Standard Time)
+[debug] [2023-02-15T08:26:19.457Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-15T08:26:19.626Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-15T08:26:19.626Z] > authorizing via signed-in user (tanphamminh2002@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2023-02-15T08:26:19.646Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-02-15T08:26:19.647Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-02-15T08:26:19.647Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-02-15T08:26:19.661Z] [hub] writing locator at C:\Users\TANPHA~1\AppData\Local\Temp\hub-ecom-typescript-phamminhtan.json
+[debug] [2023-02-15T08:26:19.684Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-02-15T08:26:19.685Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-02-15T08:26:19.685Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[debug] [2023-02-15T08:26:19.700Z] defaultcredentials: writing to file C:\Users\Tan Pham\AppData\Roaming\firebase\tanphamminh2002_gmail_com_application_default_credentials.json
+[debug] [2023-02-15T08:26:19.712Z] Setting GAC to C:\Users\Tan Pham\AppData\Roaming\firebase\tanphamminh2002_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Tan Pham\\AppData\\Roaming\\firebase\\tanphamminh2002_gmail_com_application_default_credentials.json"}}
+[debug] [2023-02-15T08:26:19.715Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ecom-typescript-phamminhtan/adminSdkConfig [none]
+[debug] [2023-02-15T08:26:19.962Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ecom-typescript-phamminhtan/adminSdkConfig 200
+[debug] [2023-02-15T08:26:19.962Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ecom-typescript-phamminhtan/adminSdkConfig {"projectId":"ecom-typescript-phamminhtan","storageBucket":"ecom-typescript-phamminhtan.appspot.com"}
+[debug] [2023-02-15T08:26:19.989Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/ecom-typescript-phamminhtan/sites 
+[debug] [2023-02-15T08:26:20.588Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/ecom-typescript-phamminhtan/sites 200
+[debug] [2023-02-15T08:26:20.588Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/ecom-typescript-phamminhtan/sites {"sites":[{"name":"projects/ecom-typescript-phamminhtan/sites/ecom-typescript-phamminhtan","defaultUrl":"https://ecom-typescript-phamminhtan.web.app","appId":"1:967904015533:web:5d1298085ebc2d6f32c224","type":"DEFAULT_SITE"}]}
+[debug] [2023-02-15T08:26:20.589Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ecom-typescript-phamminhtan/webApps/1:967904015533:web:5d1298085ebc2d6f32c224/config [none]
+[debug] [2023-02-15T08:26:21.010Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ecom-typescript-phamminhtan/webApps/1:967904015533:web:5d1298085ebc2d6f32c224/config 200
+[debug] [2023-02-15T08:26:21.010Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ecom-typescript-phamminhtan/webApps/1:967904015533:web:5d1298085ebc2d6f32c224/config {"projectId":"ecom-typescript-phamminhtan","appId":"1:967904015533:web:5d1298085ebc2d6f32c224","storageBucket":"ecom-typescript-phamminhtan.appspot.com","apiKey":"AIzaSyAKyGdu_46lwlGoswkxS3sISQZFRxL8PNM","authDomain":"ecom-typescript-phamminhtan.firebaseapp.com","messagingSenderId":"967904015533","measurementId":"G-XM4ZBNRXTR"}
+[debug] [2023-02-15T08:26:21.018Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ecom-typescript-phamminhtan [none]
+[debug] [2023-02-15T08:26:21.208Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ecom-typescript-phamminhtan 200
+[debug] [2023-02-15T08:26:21.208Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ecom-typescript-phamminhtan {"projectId":"ecom-typescript-phamminhtan","projectNumber":"967904015533","displayName":"ecom-typescript-phamminhtan","name":"projects/ecom-typescript-phamminhtan","resources":{"hostingSite":"ecom-typescript-phamminhtan"},"state":"ACTIVE","etag":"1_1b6d70c7-19e3-40a4-92e7-e5b4a6fc108f"}
+[info] i  hosting[ecom-typescript-phamminhtan]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting[ecom-typescript-phamminhtan]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[info] i  ui: downloading ui-v1.11.4.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.11.4.zip..."}}
+[debug] [2023-02-15T08:26:21.324Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.4.zip 
+[debug] [2023-02-15T08:26:21.416Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.4.zip 200
+[debug] [2023-02-15T08:26:21.416Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.4.zip [stream]
+[info] i  ui: Removing outdated emulator files: ui-v1.11.2 {"metadata":{"emulator":{"name":"ui"},"message":"Removing outdated emulator files: ui-v1.11.2"}}
+[info] i  ui: Removing outdated emulator files: ui-v1.11.2.zip {"metadata":{"emulator":{"name":"ui"},"message":"Removing outdated emulator files: ui-v1.11.2.zip"}}
+[debug] [2023-02-15T08:26:23.981Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-02-15T08:26:23.981Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-02-15T08:26:23.981Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\Tan Pham\\.cache\\firebase\\emulators\\ui-v1.11.4\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\Tan Pham\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.4\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-02-15T08:26:24.176Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2023-02-15T08:26:24.176Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Aamplify\Projects\general\amazon-clone-ts\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Aamplify\\Projects\\general\\amazon-clone-ts\\functions\" for Cloud Functions..."}}
+[debug] [2023-02-15T08:26:24.267Z] Validating nodejs source
+[debug] [2023-02-15T08:26:26.210Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.5.0",
+    "firebase-functions": "^4.2.1",
+    "stripe": "^11.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.0.0"
+  },
+  "private": true
+}
+[debug] [2023-02-15T08:26:26.210Z] Building nodejs source
+[debug] [2023-02-15T08:26:26.211Z] Failed to find version of module node: reached end of search path C:\Aamplify\Projects\general\amazon-clone-ts\functions\node_modules
+[warn] !  functions: Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-02-15T08:26:26.215Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-15T08:26:26.245Z] Found firebase-functions binary at 'C:\Aamplify\Projects\general\amazon-clone-ts\functions\node_modules\.bin\firebase-functions'

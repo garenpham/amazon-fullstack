@@ -54,3 +54,19 @@ npm i @stripe/stripe-js
 ```bash
 npm i @stripe/react-stripe-js
 ```
+
+https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/forms_and_events/
+
+```bash
+npm i axios
+```
+
+```bash
+npm i moment
+```
+
+Deploy Firebase function
+
+```bash
+firebase deploy --only functions
+```
