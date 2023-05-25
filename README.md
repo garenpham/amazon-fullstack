@@ -5,10 +5,12 @@ Payment, and Orders History page using FireBase.
 
 ### Technologies implemented:
 
-<img align="left" alt="React" height="24px" width="24px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png" />
-<img align="left" alt="Firebase" height="24px" width="24px" src="./public/firebase-logo.png" />
-<img align="left" alt="TypeScript" height="24px" width="24px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/640px-Typescript_logo_2020.svg.png" />
-<img align="left" alt="VSCode" height="24px" width="24px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/640px-Visual_Studio_Code_1.35_icon.svg.png" />
+<div>
+  <img align="left" alt="React" height="24px" width="24px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png" />
+  <img align="left" alt="Firebase" height="24px" width="24px" src="./public/firebase-logo.png" />
+  <img align="left" alt="TypeScript" height="24px" width="24px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/640px-Typescript_logo_2020.svg.png" />
+  <img align="left" alt="VSCode" height="24px" width="24px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/640px-Visual_Studio_Code_1.35_icon.svg.png" />
+</div>
 
 ### Here are the libraries integrate with the app:
 
