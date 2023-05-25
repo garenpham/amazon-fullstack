@@ -1,7 +1,7 @@
-## Welcome to my fullstack Amazon React page using Typescript.
+## Welcome to my fullstack Amazon React page.
 
-This app has the Home page, Google User login, Checkout page, Card Online
-Payment, and Orders History page using FireBase.
+This app has the Home page, User Authentication, Checkout page, Secured Online
+Payment using Stripe, and Orders History page using Firestore.
 
 ### Technologies implemented:
 
@@ -9,6 +9,7 @@ Payment, and Orders History page using FireBase.
 <img align="left" alt="Firebase" height="24px" width="24px" src="./public/firebase-logo.png" />
 <img align="left" alt="TypeScript" height="24px" width="24px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/640px-Typescript_logo_2020.svg.png" />
 <img align="left" alt="VSCode" height="24px" width="24px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/640px-Visual_Studio_Code_1.35_icon.svg.png" />
+<img align="left" alt="Stripe" height="24px" width="24px" src="https://play-lh.googleusercontent.com/2PS6w7uBztfuMys5fgodNkTwTOE6bLVB2cJYbu5GHlARAK36FzO5bUfMDP9cEJk__cE" />
 
 <br/>
 
