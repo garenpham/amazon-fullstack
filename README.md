@@ -3,10 +3,10 @@
 This app has the Home page, Google User login, Checkout page, Card Online
 Payment, and Orders History page using FireBase.
 
-### Technologies used:
+### Technologies implemented:
 
 <img align="left" alt="React" width="24px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png" />
-<img align="left" alt="Firebase" width="24px" src="https://assets.stickpng.com/images/5847f40ecef1014c0b5e488a.png" />
+<img align="left" alt="Firebase" width="24px" src="./public/firebase-logo.png" />
 <img align="left" alt="TypeScript" width="24px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/640px-Typescript_logo_2020.svg.png" />
 <img align="left" alt="VSCode" width="24px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/640px-Visual_Studio_Code_1.35_icon.svg.png" />
 
